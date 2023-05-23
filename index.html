@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja-header">
+                <h1><img id="logo" src="./imagenes/Logo.png" alt="Logo de Alura"></h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="seccion-principal">
+                <textarea id="texto-ingresado" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="caja-informativo">
+                    <img src="./imagenes/bi_exclamation-circle-fill.png" alt="!">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="caja-botones">
+                    <button class="boton" id="boton-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="boton" id="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="seccion-presentacion">
+                <img src="./imagenes/Muñeco.png" alt="Imagen de Presentación">
+                <div class="caja-mensaje">
+                    <p class="mensaje" id="primer-mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="mensaje" id="segundo-mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div> 
+            </section>
+            <section class="seccion-resultado">
+                <textarea id="texto-resultado" cols="20" rows="10" readonly></textarea>
+                <button class="boton" id="boton-copiar" onclick="copiar()">Copiar</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>2023- Desarrollado por Nayareth López Antonio - Alura Challenge ONE G5</p>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>

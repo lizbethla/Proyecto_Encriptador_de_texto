@@ -1,0 +1,268 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background: #BBBBBB;
+    width: 1440px;
+}
+
+.caja-header {
+    padding: 40px 0 40px 40px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.caja-header h1 {
+    height: 48px;
+}
+
+main{
+    background: rgb(0,255,0);
+    width: 1440px;
+}
+
+.seccion-principal{
+    padding-left: 240px;
+}
+
+#texto-ingresado {
+    width: 680px;
+    height: 288px;
+    font-size: 32px;
+    color: #0A3871;
+    text-transform: lowercase;
+    border: 0;
+    margin-top: 40px;
+    margin-bottom: 395px;
+    padding: 0;
+}
+
+#texto-ingresado::placeholder {
+    color: #0A3871;
+}
+
+#texto-ingresado:focus{
+    outline: none;
+}
+
+.caja-informativo {
+    align-items: center;
+    display:flex;
+    margin-bottom: 16px;
+}
+
+.caja-informativo p {
+    display: inline-block;
+    font-size: 12px;
+    color: #495057;
+    font-weight: bold;
+    width: 205px;
+    height: 18px;
+    line-height: 150%;
+    margin-left: 8px;
+}
+
+.caja-botones {
+    height: 99px;
+}
+
+.boton{
+    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.boton:hover{
+    transform: scale(1.1);
+}
+
+#boton-encriptar{
+    color: #FFFFFF;
+    background: #0A3871;
+}
+
+#boton-desencriptar{
+    color: #0A3871;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    margin-left: 24px;
+}
+
+.seccion-presentacion, .seccion-resultado{
+    position: absolute;
+    height: 944px;
+    width: 400px;
+    margin-left: 1000px;
+    top: 40px;
+    border-radius: 32px;
+    border: #02152c;
+    background-color: #02152c;
+    color: #FFFFFF;
+}
+
+.seccion-presentacion{
+    visibility: visible;
+}
+
+.seccion-resultado{
+    visibility: hidden;
+}
+
+.seccion-presentacion img{
+    padding: 243px 32px 0 32px;
+}
+
+.caja-mensaje{
+    margin: 32px;
+}
+
+.mensaje {
+    text-align: center;
+    height: 58px;
+    line-height: 150%;
+}
+
+#primer-mensaje {
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+#segundo-mensaje {
+    font-size: 16px;
+    height: 58px;
+}
+
+#texto-resultado { 
+    margin: 32px;
+    width: 336px;
+    height: 781px;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    padding: 0;
+    border: 0;
+}
+
+#texto-resultado:focus{
+    outline: none;
+}
+
+#boton-copiar{
+    width: 336px;
+    margin: 0 32px; 
+    color: #0A3871; 
+    padding: 0;
+    border: 0;
+}
+
+footer {
+    font-family: 'Inter', sans-serif;
+    background: #02152c;
+    width: 1440px;
+    height: 40px;
+}
+
+footer p{
+    padding: 14px 0;
+    color: #DDDDDD;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width:768px){
+    
+    header, main, footer{
+        width: 375px;
+    }
+
+    .caja-header {
+        padding: 24px 0 24px 16px;
+    }
+
+    .seccion-principal{
+        padding-left: 16px;
+    }
+
+    #logo {
+        box-sizing:border-box;
+        display:block;
+        width: 32px;
+        height: 48px;
+        padding-left:32px; 
+        background: url(./imagenes/Vector.png);
+    }
+
+    #texto-ingresado {
+        width: 343px;
+        margin-top: 56px;
+        margin-bottom: 11px;
+    }  
+    
+    .caja-botones {
+        height: 158px;  
+        padding-bottom: 24px;     
+    }
+
+    .boton{
+        width: 343px;
+    }
+
+    .boton:hover{
+        transform: scale(1);
+    }
+
+    #boton-desencriptar{
+        margin: 24px 0 0 0;
+    }
+    
+    .seccion-presentacion, .seccion-resultado{
+        position: relative;      
+        top: 0;
+        background-color:  rgb(0,255,0);
+        color: #343A40;
+    }
+
+    .seccion-presentacion{
+        display: flex;
+        height: 186px;
+        width: 327px;
+        margin: 40px 24px;
+    }
+
+    .seccion-resultado{
+        height: 595px;
+        width: 343px;
+        margin: 40px 16px 0px 16px;
+    }
+
+    .seccion-presentacion img{
+        visibility: hidden;
+        height: 0;
+        padding: 0;
+    }
+
+    .caja-mensaje{
+        font-weight: bold;
+    }
+
+    #texto-resultado { 
+        height: 432px;
+        width: 279px;
+        background-color:  rgb(0,255,0);
+    }
+
+    #boton-copiar{
+        width: 279px;
+    }
+
+    footer p{
+        margin: 0 35px;
+        padding: 8px 0;
+        width: 305px;
+    }
+
+}
